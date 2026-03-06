@@ -1,0 +1,7 @@
+# Ignore all files in the data directory
+/data
+/old_backups
+/venv
+/core
+/models
+/dashboard

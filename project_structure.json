@@ -1,0 +1,3251 @@
+{
+  "root": {
+    "folders": [
+      "control_center",
+      "core",
+      "dashboard",
+      "data",
+      "models",
+      "old_backups",
+      "testing",
+      "utils"
+    ],
+    "files": [
+      "check_status.py",
+      "control_center.py",
+      "diagnose_training.py",
+      "main.py",
+      "make_config.py",
+      "map_structure.py",
+      "monitor_training.py",
+      "old_packages.txt",
+      "project_structure.json",
+      "quick_data_check.py",
+      "requirements.txt",
+      "reset_download_status.py",
+      "restore_data.py",
+      "REWARD_SYSTEM_IDEAS.md",
+      "select_top_10.py",
+      "system_health_check.py",
+      "system_health_report.txt",
+      "validate_and_download_data.py",
+      "__init__.py"
+    ]
+  },
+  "control_center": {
+    "folders": [],
+    "files": [
+      "horizon_optimizer.py",
+      "master_config.json",
+      "model_manager.py",
+      "stock_analyzer.py",
+      "utils.py",
+      "__init__.py"
+    ]
+  },
+  "core": {
+    "folders": [],
+    "files": [
+      "bot_runner.py",
+      "__init__.py"
+    ]
+  },
+  "dashboard": {
+    "folders": [
+      "templates"
+    ],
+    "files": [
+      "app.py",
+      "__init__.py"
+    ]
+  },
+  "dashboard\\templates": {
+    "folders": [],
+    "files": [
+      "dashboard.html"
+    ]
+  },
+  "data": {
+    "folders": [
+      "backtest_results",
+      "historical",
+      "hourly",
+      "logs",
+      "trades"
+    ],
+    "files": [
+      "AAPL.csv",
+      "ADBE.csv",
+      "AMD.csv",
+      "AMGN.csv",
+      "AMZN.csv",
+      "AVGO.csv",
+      "AXP.csv",
+      "BA.csv",
+      "BAC.csv",
+      "bot_control.json",
+      "CAT.csv",
+      "CCCC.csv",
+      "CRM.csv",
+      "CSCO.csv",
+      "CVX.csv",
+      "DIA.csv",
+      "DIS.csv",
+      "DJI.csv",
+      "DOW.csv",
+      "GOOGL.csv",
+      "GS.csv",
+      "HD.csv",
+      "HON.csv",
+      "hourly_history.json",
+      "IBM.csv",
+      "INTC.csv",
+      "JNJ.csv",
+      "JPM.csv",
+      "KO.csv",
+      "MCD.csv",
+      "META.csv",
+      "meta_ai_results.json",
+      "MMM.csv",
+      "MRK.csv",
+      "MSFT.csv",
+      "MTC.csv",
+      "NFLX.csv",
+      "NKE.csv",
+      "NVDA.csv",
+      "ORCL.csv",
+      "PG.csv",
+      "position_state.json",
+      "QCOM.csv",
+      "QQQ.csv",
+      "SAP.csv",
+      "SHW.csv",
+      "SPY.csv",
+      "TRV.csv",
+      "TSLA.csv",
+      "UNH.csv",
+      "V.csv",
+      "VZ.csv",
+      "WBA.csv",
+      "WMT.csv",
+      "XOM.csv"
+    ]
+  },
+  "data\\backtest_results": {
+    "folders": [
+      "AAPL_V33_ForwardTest_20250101_to_20251231_20260128_161631",
+      "AMGN_V33_ForwardTest_20250101_to_20251231_20260128_161819",
+      "AXP_V33_ForwardTest_20250101_to_20251231_20260128_162017",
+      "BA_V33_ForwardTest_20250101_to_20251231_20260128_162232",
+      "CAT_V33_ForwardTest_20250101_to_20251231_20260128_162420",
+      "CRM_V33_ForwardTest_20250101_to_20251231_20260128_162619",
+      "CSCO_V33_ForwardTest_20250101_to_20251231_20260128_162826",
+      "CVX_V33_ForwardTest_20250101_to_20251231_20260128_163027",
+      "DIA_V33_ForwardTest_20200101_to_20251231_20260124_172305",
+      "DIA_V33_ForwardTest_20250101_to_20251231_20260124_133031",
+      "DIS_V33_ForwardTest_20250101_to_20251231_20260128_163256",
+      "DOW_V33_ForwardTest_20250101_to_20251231_20260128_163456",
+      "GS_V33_ForwardTest_20250101_to_20251231_20260128_163703",
+      "HD_V33_ForwardTest_20250101_to_20251231_20260128_163853",
+      "HON_V33_ForwardTest_20250101_to_20251231_20260128_164037",
+      "IBM_V33_ForwardTest_20250101_to_20251231_20260128_164238",
+      "INTC_V33_ForwardTest_20250101_to_20251231_20260128_164455",
+      "JNJ_V33_ForwardTest_20250101_to_20251231_20260128_164654",
+      "JPM_V33_ForwardTest_20250101_to_20251231_20260128_164856",
+      "KO_V33_ForwardTest_20250101_to_20251231_20260128_165104",
+      "MCD_V33_ForwardTest_20250101_to_20251231_20260128_165256",
+      "MMM_V33_ForwardTest_20250101_to_20251231_20260128_165446",
+      "MRK_V33_ForwardTest_20250101_to_20251231_20260128_165645",
+      "MSFT_V33_ForwardTest_20250101_to_20251231_20260128_165859",
+      "NKE_V33_ForwardTest_20250101_to_20251231_20260128_170112",
+      "NVDA_V33_20250101_to_20251231_20260124_112526",
+      "NVDA_V33_ForwardTest_20170101_to_20250101_20260124_122707",
+      "NVDA_V33_ForwardTest_20250101_to_20251231_20260124_121205",
+      "NVDA_V33_ForwardTest_20250101_to_20251231_20260124_122105",
+      "PG_V33_ForwardTest_20250101_to_20251231_20260128_170302",
+      "TRV_V33_ForwardTest_20250101_to_20251231_20260128_170438",
+      "UNH_V33_ForwardTest_20250101_to_20251231_20260128_170629",
+      "VZ_V33_ForwardTest_20250101_to_20251231_20260128_171049",
+      "V_V33_ForwardTest_20250101_to_20251231_20260128_170828",
+      "WBA_V33_ForwardTest_20250101_to_20251231_20260128_171426",
+      "WMT_V33_ForwardTest_20250101_to_20251231_20260128_171301"
+    ],
+    "files": []
+  },
+  "data\\backtest_results\\AAPL_V33_ForwardTest_20250101_to_20251231_20260128_161631": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\AMGN_V33_ForwardTest_20250101_to_20251231_20260128_161819": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\AXP_V33_ForwardTest_20250101_to_20251231_20260128_162017": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\BA_V33_ForwardTest_20250101_to_20251231_20260128_162232": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\CAT_V33_ForwardTest_20250101_to_20251231_20260128_162420": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\CRM_V33_ForwardTest_20250101_to_20251231_20260128_162619": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\CSCO_V33_ForwardTest_20250101_to_20251231_20260128_162826": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\CVX_V33_ForwardTest_20250101_to_20251231_20260128_163027": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\DIA_V33_ForwardTest_20200101_to_20251231_20260124_172305": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\DIA_V33_ForwardTest_20250101_to_20251231_20260124_133031": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\DIS_V33_ForwardTest_20250101_to_20251231_20260128_163256": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\DOW_V33_ForwardTest_20250101_to_20251231_20260128_163456": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\GS_V33_ForwardTest_20250101_to_20251231_20260128_163703": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\HD_V33_ForwardTest_20250101_to_20251231_20260128_163853": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\HON_V33_ForwardTest_20250101_to_20251231_20260128_164037": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\IBM_V33_ForwardTest_20250101_to_20251231_20260128_164238": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\INTC_V33_ForwardTest_20250101_to_20251231_20260128_164455": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\JNJ_V33_ForwardTest_20250101_to_20251231_20260128_164654": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\JPM_V33_ForwardTest_20250101_to_20251231_20260128_164856": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\KO_V33_ForwardTest_20250101_to_20251231_20260128_165104": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\MCD_V33_ForwardTest_20250101_to_20251231_20260128_165256": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv"
+    ]
+  },
+  "data\\backtest_results\\MMM_V33_ForwardTest_20250101_to_20251231_20260128_165446": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\MRK_V33_ForwardTest_20250101_to_20251231_20260128_165645": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\MSFT_V33_ForwardTest_20250101_to_20251231_20260128_165859": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\NKE_V33_ForwardTest_20250101_to_20251231_20260128_170112": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\NVDA_V33_20250101_to_20251231_20260124_112526": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv"
+    ]
+  },
+  "data\\backtest_results\\NVDA_V33_ForwardTest_20170101_to_20250101_20260124_122707": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\NVDA_V33_ForwardTest_20250101_to_20251231_20260124_121205": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\NVDA_V33_ForwardTest_20250101_to_20251231_20260124_122105": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\PG_V33_ForwardTest_20250101_to_20251231_20260128_170302": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\TRV_V33_ForwardTest_20250101_to_20251231_20260128_170438": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\UNH_V33_ForwardTest_20250101_to_20251231_20260128_170629": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\VZ_V33_ForwardTest_20250101_to_20251231_20260128_171049": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\V_V33_ForwardTest_20250101_to_20251231_20260128_170828": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\WBA_V33_ForwardTest_20250101_to_20251231_20260128_171426": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\backtest_results\\WMT_V33_ForwardTest_20250101_to_20251231_20260128_171301": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.csv",
+      "equity_curve.png",
+      "metrics.json",
+      "trades.csv"
+    ]
+  },
+  "data\\historical": {
+    "folders": [
+      "stocks"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks": {
+    "folders": [
+      "AAPL",
+      "AMGN",
+      "AMZN",
+      "AXP",
+      "BA",
+      "CAT",
+      "CCCC",
+      "CRM",
+      "CSCO",
+      "CVX",
+      "DIA",
+      "DIS",
+      "DOW",
+      "GS",
+      "HD",
+      "HON",
+      "IBM",
+      "INTC",
+      "JNJ",
+      "JPM",
+      "KO",
+      "MCD",
+      "MMM",
+      "MRK",
+      "MSFT",
+      "NKE",
+      "NVDA",
+      "PG",
+      "SHW",
+      "TRV",
+      "TSLA",
+      "UNH",
+      "V",
+      "VZ",
+      "WBA",
+      "WMT"
+    ],
+    "files": [
+      "terminal.log"
+    ]
+  },
+  "data\\historical\\stocks\\AAPL": {
+    "folders": [
+      "daily",
+      "hourly",
+      "meta",
+      "meta_backup",
+      "meta_backup_best",
+      "meta_backup_super_good"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\AAPL\\daily": {
+    "folders": [],
+    "files": [
+      "daily_feature_names.json",
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\AAPL\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_feature_names.json",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\AAPL\\meta": {
+    "folders": [
+      "checkpoints",
+      "graphs"
+    ],
+    "files": [
+      "best_model.zip",
+      "forward_test_chart.png",
+      "forward_test_metrics.json",
+      "forward_test_trades.json",
+      "meta_ai_final.zip",
+      "vecnormalize.pkl"
+    ]
+  },
+  "data\\historical\\stocks\\AAPL\\meta\\checkpoints": {
+    "folders": [],
+    "files": [
+      "AAPL_meta_10000000_steps.zip",
+      "AAPL_meta_1000000_steps.zip",
+      "AAPL_meta_1049895_steps.zip",
+      "AAPL_meta_1099890_steps.zip",
+      "AAPL_meta_1149885_steps.zip",
+      "AAPL_meta_1199880_steps.zip",
+      "AAPL_meta_1299870_steps.zip",
+      "AAPL_meta_1399860_steps.zip",
+      "AAPL_meta_1499850_steps.zip",
+      "AAPL_meta_149985_steps.zip",
+      "AAPL_meta_1500000_steps.zip",
+      "AAPL_meta_1599840_steps.zip",
+      "AAPL_meta_1699830_steps.zip",
+      "AAPL_meta_1799820_steps.zip",
+      "AAPL_meta_1899810_steps.zip",
+      "AAPL_meta_1999800_steps.zip",
+      "AAPL_meta_199980_steps.zip",
+      "AAPL_meta_2000000_steps.zip",
+      "AAPL_meta_2099790_steps.zip",
+      "AAPL_meta_2199780_steps.zip",
+      "AAPL_meta_2299770_steps.zip",
+      "AAPL_meta_2399760_steps.zip",
+      "AAPL_meta_2499750_steps.zip",
+      "AAPL_meta_249975_steps.zip",
+      "AAPL_meta_2500000_steps.zip",
+      "AAPL_meta_2599740_steps.zip",
+      "AAPL_meta_2699730_steps.zip",
+      "AAPL_meta_2799720_steps.zip",
+      "AAPL_meta_2899710_steps.zip",
+      "AAPL_meta_2999700_steps.zip",
+      "AAPL_meta_299970_steps.zip",
+      "AAPL_meta_3000000_steps.zip",
+      "AAPL_meta_3099690_steps.zip",
+      "AAPL_meta_3199680_steps.zip",
+      "AAPL_meta_3299670_steps.zip",
+      "AAPL_meta_3399660_steps.zip",
+      "AAPL_meta_3499650_steps.zip",
+      "AAPL_meta_349965_steps.zip",
+      "AAPL_meta_3500000_steps.zip",
+      "AAPL_meta_3599640_steps.zip",
+      "AAPL_meta_3699630_steps.zip",
+      "AAPL_meta_3799620_steps.zip",
+      "AAPL_meta_3899610_steps.zip",
+      "AAPL_meta_3999600_steps.zip",
+      "AAPL_meta_399960_steps.zip",
+      "AAPL_meta_4000000_steps.zip",
+      "AAPL_meta_4099590_steps.zip",
+      "AAPL_meta_4199580_steps.zip",
+      "AAPL_meta_4299570_steps.zip",
+      "AAPL_meta_4399560_steps.zip",
+      "AAPL_meta_4499550_steps.zip",
+      "AAPL_meta_449955_steps.zip",
+      "AAPL_meta_4500000_steps.zip",
+      "AAPL_meta_4599540_steps.zip",
+      "AAPL_meta_4699530_steps.zip",
+      "AAPL_meta_4799520_steps.zip",
+      "AAPL_meta_4899510_steps.zip",
+      "AAPL_meta_4999500_steps.zip",
+      "AAPL_meta_499950_steps.zip",
+      "AAPL_meta_49995_steps.zip",
+      "AAPL_meta_5000000_steps.zip",
+      "AAPL_meta_500000_steps.zip",
+      "AAPL_meta_5099490_steps.zip",
+      "AAPL_meta_5199480_steps.zip",
+      "AAPL_meta_5299470_steps.zip",
+      "AAPL_meta_5399460_steps.zip",
+      "AAPL_meta_5499450_steps.zip",
+      "AAPL_meta_549945_steps.zip",
+      "AAPL_meta_5500000_steps.zip",
+      "AAPL_meta_5599440_steps.zip",
+      "AAPL_meta_5699430_steps.zip",
+      "AAPL_meta_5799420_steps.zip",
+      "AAPL_meta_5899410_steps.zip",
+      "AAPL_meta_5999400_steps.zip",
+      "AAPL_meta_599940_steps.zip",
+      "AAPL_meta_6000000_steps.zip",
+      "AAPL_meta_6099390_steps.zip",
+      "AAPL_meta_6199380_steps.zip",
+      "AAPL_meta_6299370_steps.zip",
+      "AAPL_meta_6399360_steps.zip",
+      "AAPL_meta_6499350_steps.zip",
+      "AAPL_meta_649935_steps.zip",
+      "AAPL_meta_6500000_steps.zip",
+      "AAPL_meta_6599340_steps.zip",
+      "AAPL_meta_6699330_steps.zip",
+      "AAPL_meta_6799320_steps.zip",
+      "AAPL_meta_6899310_steps.zip",
+      "AAPL_meta_6999300_steps.zip",
+      "AAPL_meta_699930_steps.zip",
+      "AAPL_meta_7000000_steps.zip",
+      "AAPL_meta_7099290_steps.zip",
+      "AAPL_meta_7199280_steps.zip",
+      "AAPL_meta_7299270_steps.zip",
+      "AAPL_meta_7399260_steps.zip",
+      "AAPL_meta_7499250_steps.zip",
+      "AAPL_meta_749925_steps.zip",
+      "AAPL_meta_7500000_steps.zip",
+      "AAPL_meta_7599240_steps.zip",
+      "AAPL_meta_7699230_steps.zip",
+      "AAPL_meta_7799220_steps.zip",
+      "AAPL_meta_7899210_steps.zip",
+      "AAPL_meta_7999200_steps.zip",
+      "AAPL_meta_799920_steps.zip",
+      "AAPL_meta_8000000_steps.zip",
+      "AAPL_meta_8099190_steps.zip",
+      "AAPL_meta_8199180_steps.zip",
+      "AAPL_meta_8299170_steps.zip",
+      "AAPL_meta_8399160_steps.zip",
+      "AAPL_meta_8499150_steps.zip",
+      "AAPL_meta_849915_steps.zip",
+      "AAPL_meta_8500000_steps.zip",
+      "AAPL_meta_8599140_steps.zip",
+      "AAPL_meta_8699130_steps.zip",
+      "AAPL_meta_8799120_steps.zip",
+      "AAPL_meta_8899110_steps.zip",
+      "AAPL_meta_8999100_steps.zip",
+      "AAPL_meta_899910_steps.zip",
+      "AAPL_meta_9000000_steps.zip",
+      "AAPL_meta_9099090_steps.zip",
+      "AAPL_meta_9199080_steps.zip",
+      "AAPL_meta_9299070_steps.zip",
+      "AAPL_meta_9399060_steps.zip",
+      "AAPL_meta_9499050_steps.zip",
+      "AAPL_meta_949905_steps.zip",
+      "AAPL_meta_9500000_steps.zip",
+      "AAPL_meta_9599040_steps.zip",
+      "AAPL_meta_9699030_steps.zip",
+      "AAPL_meta_9799020_steps.zip",
+      "AAPL_meta_9899010_steps.zip",
+      "AAPL_meta_9999000_steps.zip",
+      "AAPL_meta_999900_steps.zip",
+      "AAPL_meta_99990_steps.zip"
+    ]
+  },
+  "data\\historical\\stocks\\AAPL\\meta\\graphs": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.png",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\historical\\stocks\\AAPL\\meta_backup": {
+    "folders": [
+      "checkpoints"
+    ],
+    "files": [
+      "best_model.zip",
+      "forward_test_metrics.json",
+      "forward_test_trades.json",
+      "meta_ai_final.zip",
+      "predictions_2020-01-01_to_2023-12-31.npz",
+      "predictions_2020-01-01_to_2024-12-31.npz",
+      "predictions_2024-01-01_to_2024-12-31.npz",
+      "predictions_2025-01-01_to_2025-12-31.npz",
+      "prediction_cache.npz",
+      "vec_normalize.pkl"
+    ]
+  },
+  "data\\historical\\stocks\\AAPL\\meta_backup\\checkpoints": {
+    "folders": [],
+    "files": [
+      "AAPL_meta_1049895_steps.zip",
+      "AAPL_meta_1099890_steps.zip",
+      "AAPL_meta_1149885_steps.zip",
+      "AAPL_meta_1199880_steps.zip",
+      "AAPL_meta_1299870_steps.zip",
+      "AAPL_meta_1399860_steps.zip",
+      "AAPL_meta_1499850_steps.zip",
+      "AAPL_meta_149985_steps.zip",
+      "AAPL_meta_1599840_steps.zip",
+      "AAPL_meta_1699830_steps.zip",
+      "AAPL_meta_1799820_steps.zip",
+      "AAPL_meta_1899810_steps.zip",
+      "AAPL_meta_1999800_steps.zip",
+      "AAPL_meta_199980_steps.zip",
+      "AAPL_meta_2099790_steps.zip",
+      "AAPL_meta_2199780_steps.zip",
+      "AAPL_meta_2299770_steps.zip",
+      "AAPL_meta_2399760_steps.zip",
+      "AAPL_meta_2499750_steps.zip",
+      "AAPL_meta_249975_steps.zip",
+      "AAPL_meta_2599740_steps.zip",
+      "AAPL_meta_2699730_steps.zip",
+      "AAPL_meta_2799720_steps.zip",
+      "AAPL_meta_2899710_steps.zip",
+      "AAPL_meta_2999700_steps.zip",
+      "AAPL_meta_299970_steps.zip",
+      "AAPL_meta_3099690_steps.zip",
+      "AAPL_meta_3199680_steps.zip",
+      "AAPL_meta_3299670_steps.zip",
+      "AAPL_meta_3399660_steps.zip",
+      "AAPL_meta_3499650_steps.zip",
+      "AAPL_meta_349965_steps.zip",
+      "AAPL_meta_3599640_steps.zip",
+      "AAPL_meta_3699630_steps.zip",
+      "AAPL_meta_3799620_steps.zip",
+      "AAPL_meta_3899610_steps.zip",
+      "AAPL_meta_3999600_steps.zip",
+      "AAPL_meta_399960_steps.zip",
+      "AAPL_meta_4099590_steps.zip",
+      "AAPL_meta_4199580_steps.zip",
+      "AAPL_meta_4299570_steps.zip",
+      "AAPL_meta_4399560_steps.zip",
+      "AAPL_meta_4499550_steps.zip",
+      "AAPL_meta_449955_steps.zip",
+      "AAPL_meta_4599540_steps.zip",
+      "AAPL_meta_4699530_steps.zip",
+      "AAPL_meta_4799520_steps.zip",
+      "AAPL_meta_4899510_steps.zip",
+      "AAPL_meta_4999500_steps.zip",
+      "AAPL_meta_499950_steps.zip",
+      "AAPL_meta_49995_steps.zip",
+      "AAPL_meta_5099490_steps.zip",
+      "AAPL_meta_5199480_steps.zip",
+      "AAPL_meta_5299470_steps.zip",
+      "AAPL_meta_5399460_steps.zip",
+      "AAPL_meta_5499450_steps.zip",
+      "AAPL_meta_549945_steps.zip",
+      "AAPL_meta_5599440_steps.zip",
+      "AAPL_meta_5699430_steps.zip",
+      "AAPL_meta_5799420_steps.zip",
+      "AAPL_meta_5899410_steps.zip",
+      "AAPL_meta_5999400_steps.zip",
+      "AAPL_meta_599940_steps.zip",
+      "AAPL_meta_6099390_steps.zip",
+      "AAPL_meta_6199380_steps.zip",
+      "AAPL_meta_6299370_steps.zip",
+      "AAPL_meta_6399360_steps.zip",
+      "AAPL_meta_6499350_steps.zip",
+      "AAPL_meta_649935_steps.zip",
+      "AAPL_meta_6599340_steps.zip",
+      "AAPL_meta_6699330_steps.zip",
+      "AAPL_meta_6799320_steps.zip",
+      "AAPL_meta_6899310_steps.zip",
+      "AAPL_meta_6999300_steps.zip",
+      "AAPL_meta_699930_steps.zip",
+      "AAPL_meta_7099290_steps.zip",
+      "AAPL_meta_7199280_steps.zip",
+      "AAPL_meta_7299270_steps.zip",
+      "AAPL_meta_7399260_steps.zip",
+      "AAPL_meta_7499250_steps.zip",
+      "AAPL_meta_749925_steps.zip",
+      "AAPL_meta_7599240_steps.zip",
+      "AAPL_meta_7699230_steps.zip",
+      "AAPL_meta_7799220_steps.zip",
+      "AAPL_meta_7899210_steps.zip",
+      "AAPL_meta_7999200_steps.zip",
+      "AAPL_meta_799920_steps.zip",
+      "AAPL_meta_8099190_steps.zip",
+      "AAPL_meta_8199180_steps.zip",
+      "AAPL_meta_8299170_steps.zip",
+      "AAPL_meta_8399160_steps.zip",
+      "AAPL_meta_8499150_steps.zip",
+      "AAPL_meta_849915_steps.zip",
+      "AAPL_meta_8599140_steps.zip",
+      "AAPL_meta_8699130_steps.zip",
+      "AAPL_meta_8799120_steps.zip",
+      "AAPL_meta_8899110_steps.zip",
+      "AAPL_meta_8999100_steps.zip",
+      "AAPL_meta_899910_steps.zip",
+      "AAPL_meta_9099090_steps.zip",
+      "AAPL_meta_9199080_steps.zip",
+      "AAPL_meta_9299070_steps.zip",
+      "AAPL_meta_9399060_steps.zip",
+      "AAPL_meta_9499050_steps.zip",
+      "AAPL_meta_949905_steps.zip",
+      "AAPL_meta_9599040_steps.zip",
+      "AAPL_meta_9699030_steps.zip",
+      "AAPL_meta_9799020_steps.zip",
+      "AAPL_meta_9899010_steps.zip",
+      "AAPL_meta_9999000_steps.zip",
+      "AAPL_meta_999900_steps.zip",
+      "AAPL_meta_99990_steps.zip"
+    ]
+  },
+  "data\\historical\\stocks\\AAPL\\meta_backup_best": {
+    "folders": [
+      "checkpoints"
+    ],
+    "files": [
+      "best_model.zip",
+      "forward_test_chart.png",
+      "forward_test_metrics.json",
+      "forward_test_trades.json",
+      "meta_ai_final.zip",
+      "predictions_2016-01-01_to_2022-12-31.npz",
+      "predictions_2020-01-01_to_2023-12-31.npz",
+      "predictions_2020-01-01_to_2024-12-31.npz",
+      "predictions_2023-01-01_to_2025-12-31.npz",
+      "predictions_2024-01-01_to_2024-12-31.npz",
+      "predictions_2025-01-01_to_2025-12-31.npz",
+      "prediction_cache.npz",
+      "vec_normalize.pkl"
+    ]
+  },
+  "data\\historical\\stocks\\AAPL\\meta_backup_best\\checkpoints": {
+    "folders": [],
+    "files": [
+      "AAPL_meta_1049895_steps.zip",
+      "AAPL_meta_1099890_steps.zip",
+      "AAPL_meta_1149885_steps.zip",
+      "AAPL_meta_1199880_steps.zip",
+      "AAPL_meta_1299870_steps.zip",
+      "AAPL_meta_1399860_steps.zip",
+      "AAPL_meta_1499850_steps.zip",
+      "AAPL_meta_149985_steps.zip",
+      "AAPL_meta_1599840_steps.zip",
+      "AAPL_meta_1699830_steps.zip",
+      "AAPL_meta_1799820_steps.zip",
+      "AAPL_meta_1899810_steps.zip",
+      "AAPL_meta_1999800_steps.zip",
+      "AAPL_meta_199980_steps.zip",
+      "AAPL_meta_2099790_steps.zip",
+      "AAPL_meta_2199780_steps.zip",
+      "AAPL_meta_2299770_steps.zip",
+      "AAPL_meta_2399760_steps.zip",
+      "AAPL_meta_2499750_steps.zip",
+      "AAPL_meta_249975_steps.zip",
+      "AAPL_meta_2599740_steps.zip",
+      "AAPL_meta_2699730_steps.zip",
+      "AAPL_meta_2799720_steps.zip",
+      "AAPL_meta_2899710_steps.zip",
+      "AAPL_meta_2999700_steps.zip",
+      "AAPL_meta_299970_steps.zip",
+      "AAPL_meta_3099690_steps.zip",
+      "AAPL_meta_3199680_steps.zip",
+      "AAPL_meta_3299670_steps.zip",
+      "AAPL_meta_3399660_steps.zip",
+      "AAPL_meta_3499650_steps.zip",
+      "AAPL_meta_349965_steps.zip",
+      "AAPL_meta_3599640_steps.zip",
+      "AAPL_meta_3699630_steps.zip",
+      "AAPL_meta_3799620_steps.zip",
+      "AAPL_meta_3899610_steps.zip",
+      "AAPL_meta_3999600_steps.zip",
+      "AAPL_meta_399960_steps.zip",
+      "AAPL_meta_4099590_steps.zip",
+      "AAPL_meta_4199580_steps.zip",
+      "AAPL_meta_4299570_steps.zip",
+      "AAPL_meta_4399560_steps.zip",
+      "AAPL_meta_4499550_steps.zip",
+      "AAPL_meta_449955_steps.zip",
+      "AAPL_meta_4599540_steps.zip",
+      "AAPL_meta_4699530_steps.zip",
+      "AAPL_meta_4799520_steps.zip",
+      "AAPL_meta_4899510_steps.zip",
+      "AAPL_meta_4999500_steps.zip",
+      "AAPL_meta_499950_steps.zip",
+      "AAPL_meta_49995_steps.zip",
+      "AAPL_meta_5099490_steps.zip",
+      "AAPL_meta_5199480_steps.zip",
+      "AAPL_meta_5299470_steps.zip",
+      "AAPL_meta_5399460_steps.zip",
+      "AAPL_meta_5499450_steps.zip",
+      "AAPL_meta_549945_steps.zip",
+      "AAPL_meta_5599440_steps.zip",
+      "AAPL_meta_5699430_steps.zip",
+      "AAPL_meta_5799420_steps.zip",
+      "AAPL_meta_5899410_steps.zip",
+      "AAPL_meta_5999400_steps.zip",
+      "AAPL_meta_599940_steps.zip",
+      "AAPL_meta_6099390_steps.zip",
+      "AAPL_meta_6199380_steps.zip",
+      "AAPL_meta_6299370_steps.zip",
+      "AAPL_meta_6399360_steps.zip",
+      "AAPL_meta_6499350_steps.zip",
+      "AAPL_meta_649935_steps.zip",
+      "AAPL_meta_6599340_steps.zip",
+      "AAPL_meta_6699330_steps.zip",
+      "AAPL_meta_6799320_steps.zip",
+      "AAPL_meta_6899310_steps.zip",
+      "AAPL_meta_6999300_steps.zip",
+      "AAPL_meta_699930_steps.zip",
+      "AAPL_meta_7099290_steps.zip",
+      "AAPL_meta_7199280_steps.zip",
+      "AAPL_meta_7299270_steps.zip",
+      "AAPL_meta_7399260_steps.zip",
+      "AAPL_meta_7499250_steps.zip",
+      "AAPL_meta_749925_steps.zip",
+      "AAPL_meta_7599240_steps.zip",
+      "AAPL_meta_7699230_steps.zip",
+      "AAPL_meta_7799220_steps.zip",
+      "AAPL_meta_7899210_steps.zip",
+      "AAPL_meta_7999200_steps.zip",
+      "AAPL_meta_799920_steps.zip",
+      "AAPL_meta_8099190_steps.zip",
+      "AAPL_meta_8199180_steps.zip",
+      "AAPL_meta_8299170_steps.zip",
+      "AAPL_meta_8399160_steps.zip",
+      "AAPL_meta_8499150_steps.zip",
+      "AAPL_meta_849915_steps.zip",
+      "AAPL_meta_8599140_steps.zip",
+      "AAPL_meta_8699130_steps.zip",
+      "AAPL_meta_8799120_steps.zip",
+      "AAPL_meta_8899110_steps.zip",
+      "AAPL_meta_8999100_steps.zip",
+      "AAPL_meta_899910_steps.zip",
+      "AAPL_meta_9099090_steps.zip",
+      "AAPL_meta_9199080_steps.zip",
+      "AAPL_meta_9299070_steps.zip",
+      "AAPL_meta_9399060_steps.zip",
+      "AAPL_meta_9499050_steps.zip",
+      "AAPL_meta_949905_steps.zip",
+      "AAPL_meta_9599040_steps.zip",
+      "AAPL_meta_9699030_steps.zip",
+      "AAPL_meta_9799020_steps.zip",
+      "AAPL_meta_9899010_steps.zip",
+      "AAPL_meta_9999000_steps.zip",
+      "AAPL_meta_999900_steps.zip",
+      "AAPL_meta_99990_steps.zip"
+    ]
+  },
+  "data\\historical\\stocks\\AAPL\\meta_backup_super_good": {
+    "folders": [
+      "checkpoints"
+    ],
+    "files": [
+      "best_model.zip",
+      "forward_test_chart.png",
+      "forward_test_metrics.json",
+      "forward_test_trades.json",
+      "meta_ai_final.zip",
+      "predictions_2016-01-01_to_2022-12-31.npz",
+      "predictions_2020-01-01_to_2023-12-31.npz",
+      "predictions_2020-01-01_to_2024-12-31.npz",
+      "predictions_2023-01-01_to_2025-12-31.npz",
+      "predictions_2024-01-01_to_2024-12-31.npz",
+      "predictions_2025-01-01_to_2025-12-31.npz",
+      "prediction_cache.npz",
+      "vec_normalize.pkl"
+    ]
+  },
+  "data\\historical\\stocks\\AAPL\\meta_backup_super_good\\checkpoints": {
+    "folders": [],
+    "files": [
+      "AAPL_meta_1049895_steps.zip",
+      "AAPL_meta_1099890_steps.zip",
+      "AAPL_meta_1149885_steps.zip",
+      "AAPL_meta_1199880_steps.zip",
+      "AAPL_meta_1299870_steps.zip",
+      "AAPL_meta_1399860_steps.zip",
+      "AAPL_meta_1499850_steps.zip",
+      "AAPL_meta_149985_steps.zip",
+      "AAPL_meta_1599840_steps.zip",
+      "AAPL_meta_1699830_steps.zip",
+      "AAPL_meta_1799820_steps.zip",
+      "AAPL_meta_1899810_steps.zip",
+      "AAPL_meta_1999800_steps.zip",
+      "AAPL_meta_199980_steps.zip",
+      "AAPL_meta_2099790_steps.zip",
+      "AAPL_meta_2199780_steps.zip",
+      "AAPL_meta_2299770_steps.zip",
+      "AAPL_meta_2399760_steps.zip",
+      "AAPL_meta_2499750_steps.zip",
+      "AAPL_meta_249975_steps.zip",
+      "AAPL_meta_2599740_steps.zip",
+      "AAPL_meta_2699730_steps.zip",
+      "AAPL_meta_2799720_steps.zip",
+      "AAPL_meta_2899710_steps.zip",
+      "AAPL_meta_2999700_steps.zip",
+      "AAPL_meta_299970_steps.zip",
+      "AAPL_meta_3099690_steps.zip",
+      "AAPL_meta_3199680_steps.zip",
+      "AAPL_meta_3299670_steps.zip",
+      "AAPL_meta_3399660_steps.zip",
+      "AAPL_meta_3499650_steps.zip",
+      "AAPL_meta_349965_steps.zip",
+      "AAPL_meta_3599640_steps.zip",
+      "AAPL_meta_3699630_steps.zip",
+      "AAPL_meta_3799620_steps.zip",
+      "AAPL_meta_3899610_steps.zip",
+      "AAPL_meta_3999600_steps.zip",
+      "AAPL_meta_399960_steps.zip",
+      "AAPL_meta_4099590_steps.zip",
+      "AAPL_meta_4199580_steps.zip",
+      "AAPL_meta_4299570_steps.zip",
+      "AAPL_meta_4399560_steps.zip",
+      "AAPL_meta_4499550_steps.zip",
+      "AAPL_meta_449955_steps.zip",
+      "AAPL_meta_4599540_steps.zip",
+      "AAPL_meta_4699530_steps.zip",
+      "AAPL_meta_4799520_steps.zip",
+      "AAPL_meta_4899510_steps.zip",
+      "AAPL_meta_4999500_steps.zip",
+      "AAPL_meta_499950_steps.zip",
+      "AAPL_meta_49995_steps.zip",
+      "AAPL_meta_5099490_steps.zip",
+      "AAPL_meta_5199480_steps.zip",
+      "AAPL_meta_5299470_steps.zip",
+      "AAPL_meta_5399460_steps.zip",
+      "AAPL_meta_5499450_steps.zip",
+      "AAPL_meta_549945_steps.zip",
+      "AAPL_meta_5599440_steps.zip",
+      "AAPL_meta_5699430_steps.zip",
+      "AAPL_meta_5799420_steps.zip",
+      "AAPL_meta_5899410_steps.zip",
+      "AAPL_meta_5999400_steps.zip",
+      "AAPL_meta_599940_steps.zip",
+      "AAPL_meta_6099390_steps.zip",
+      "AAPL_meta_6199380_steps.zip",
+      "AAPL_meta_6299370_steps.zip",
+      "AAPL_meta_6399360_steps.zip",
+      "AAPL_meta_6499350_steps.zip",
+      "AAPL_meta_649935_steps.zip",
+      "AAPL_meta_6599340_steps.zip",
+      "AAPL_meta_6699330_steps.zip",
+      "AAPL_meta_6799320_steps.zip",
+      "AAPL_meta_6899310_steps.zip",
+      "AAPL_meta_6999300_steps.zip",
+      "AAPL_meta_699930_steps.zip",
+      "AAPL_meta_7099290_steps.zip",
+      "AAPL_meta_7199280_steps.zip",
+      "AAPL_meta_7299270_steps.zip",
+      "AAPL_meta_7399260_steps.zip",
+      "AAPL_meta_7499250_steps.zip",
+      "AAPL_meta_749925_steps.zip",
+      "AAPL_meta_7599240_steps.zip",
+      "AAPL_meta_7699230_steps.zip",
+      "AAPL_meta_7799220_steps.zip",
+      "AAPL_meta_7899210_steps.zip",
+      "AAPL_meta_7999200_steps.zip",
+      "AAPL_meta_799920_steps.zip",
+      "AAPL_meta_8099190_steps.zip",
+      "AAPL_meta_8199180_steps.zip",
+      "AAPL_meta_8299170_steps.zip",
+      "AAPL_meta_8399160_steps.zip",
+      "AAPL_meta_8499150_steps.zip",
+      "AAPL_meta_849915_steps.zip",
+      "AAPL_meta_8599140_steps.zip",
+      "AAPL_meta_8699130_steps.zip",
+      "AAPL_meta_8799120_steps.zip",
+      "AAPL_meta_8899110_steps.zip",
+      "AAPL_meta_8999100_steps.zip",
+      "AAPL_meta_899910_steps.zip",
+      "AAPL_meta_9099090_steps.zip",
+      "AAPL_meta_9199080_steps.zip",
+      "AAPL_meta_9299070_steps.zip",
+      "AAPL_meta_9399060_steps.zip",
+      "AAPL_meta_9499050_steps.zip",
+      "AAPL_meta_949905_steps.zip",
+      "AAPL_meta_9599040_steps.zip",
+      "AAPL_meta_9699030_steps.zip",
+      "AAPL_meta_9799020_steps.zip",
+      "AAPL_meta_9899010_steps.zip",
+      "AAPL_meta_9999000_steps.zip",
+      "AAPL_meta_999900_steps.zip",
+      "AAPL_meta_99990_steps.zip"
+    ]
+  },
+  "data\\historical\\stocks\\AMGN": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\AMGN\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\AMGN\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\AMZN": {
+    "folders": [
+      "daily",
+      "hourly",
+      "meta"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\AMZN\\daily": {
+    "folders": [],
+    "files": [
+      "daily_feature_names.json",
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\AMZN\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_feature_names.json",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\AMZN\\meta": {
+    "folders": [
+      "checkpoints",
+      "graphs"
+    ],
+    "files": [
+      "best_model.zip",
+      "forward_test_metrics.json",
+      "forward_test_trades.json",
+      "meta_ai_final.zip",
+      "vecnormalize.pkl"
+    ]
+  },
+  "data\\historical\\stocks\\AMZN\\meta\\checkpoints": {
+    "folders": [],
+    "files": [
+      "AMZN_meta_10000000_steps.zip",
+      "AMZN_meta_1000000_steps.zip",
+      "AMZN_meta_1500000_steps.zip",
+      "AMZN_meta_2000000_steps.zip",
+      "AMZN_meta_2500000_steps.zip",
+      "AMZN_meta_3000000_steps.zip",
+      "AMZN_meta_3500000_steps.zip",
+      "AMZN_meta_4000000_steps.zip",
+      "AMZN_meta_4500000_steps.zip",
+      "AMZN_meta_5000000_steps.zip",
+      "AMZN_meta_500000_steps.zip",
+      "AMZN_meta_5500000_steps.zip",
+      "AMZN_meta_6000000_steps.zip",
+      "AMZN_meta_6500000_steps.zip",
+      "AMZN_meta_7000000_steps.zip",
+      "AMZN_meta_7500000_steps.zip",
+      "AMZN_meta_8000000_steps.zip",
+      "AMZN_meta_8500000_steps.zip",
+      "AMZN_meta_9000000_steps.zip",
+      "AMZN_meta_9500000_steps.zip"
+    ]
+  },
+  "data\\historical\\stocks\\AMZN\\meta\\graphs": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.png",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\historical\\stocks\\AXP": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\AXP\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\AXP\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\BA": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\BA\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\BA\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\CAT": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\CAT\\daily": {
+    "folders": [],
+    "files": [
+      "daily_feature_names.json",
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\CAT\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_feature_names.json",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\CCCC": {
+    "folders": [
+      "daily"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\CCCC\\daily": {
+    "folders": [],
+    "files": [
+      "daily_feature_names.json",
+      "daily_model.joblib",
+      "daily_params.json",
+      "feature_importance_daily.png"
+    ]
+  },
+  "data\\historical\\stocks\\CRM": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\CRM\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\CRM\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\CSCO": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\CSCO\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\CSCO\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\CVX": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\CVX\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\CVX\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\DIA": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": [
+      "predictions_cache_2025-01-01_2025-12-31.pkl",
+      "v33_optimized_params.json"
+    ]
+  },
+  "data\\historical\\stocks\\DIA\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\DIA\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\DIS": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\DIS\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\DIS\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\DOW": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\DOW\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\DOW\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\GS": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\GS\\daily": {
+    "folders": [],
+    "files": [
+      "daily_feature_names.json",
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\GS\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_feature_names.json",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\HD": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\HD\\daily": {
+    "folders": [],
+    "files": [
+      "daily_feature_names.json",
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\HD\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_feature_names.json",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\HON": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\HON\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\HON\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\IBM": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\IBM\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\IBM\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\INTC": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\INTC\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\INTC\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\JNJ": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\JNJ\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\JNJ\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\JPM": {
+    "folders": [
+      "daily",
+      "hourly",
+      "meta"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\JPM\\daily": {
+    "folders": [],
+    "files": [
+      "daily_feature_names.json",
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\JPM\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_feature_names.json",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\JPM\\meta": {
+    "folders": [
+      "checkpoints",
+      "graphs"
+    ],
+    "files": [
+      "best_model.zip",
+      "forward_test_metrics.json",
+      "forward_test_trades.json",
+      "meta_ai_final.zip",
+      "vecnormalize.pkl"
+    ]
+  },
+  "data\\historical\\stocks\\JPM\\meta\\checkpoints": {
+    "folders": [],
+    "files": [
+      "JPM_meta_10000000_steps.zip",
+      "JPM_meta_1000000_steps.zip",
+      "JPM_meta_1500000_steps.zip",
+      "JPM_meta_2000000_steps.zip",
+      "JPM_meta_2500000_steps.zip",
+      "JPM_meta_3000000_steps.zip",
+      "JPM_meta_3500000_steps.zip",
+      "JPM_meta_4000000_steps.zip",
+      "JPM_meta_4500000_steps.zip",
+      "JPM_meta_5000000_steps.zip",
+      "JPM_meta_500000_steps.zip",
+      "JPM_meta_5500000_steps.zip",
+      "JPM_meta_6000000_steps.zip",
+      "JPM_meta_6500000_steps.zip",
+      "JPM_meta_7000000_steps.zip",
+      "JPM_meta_7500000_steps.zip",
+      "JPM_meta_8000000_steps.zip",
+      "JPM_meta_8500000_steps.zip",
+      "JPM_meta_9000000_steps.zip",
+      "JPM_meta_9500000_steps.zip"
+    ]
+  },
+  "data\\historical\\stocks\\JPM\\meta\\graphs": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.png",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\historical\\stocks\\KO": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\KO\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\KO\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\MCD": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\MCD\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\MCD\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\MMM": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\MMM\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\MMM\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\MRK": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\MRK\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\MRK\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\MSFT": {
+    "folders": [
+      "daily",
+      "hourly",
+      "meta"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\MSFT\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\MSFT\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\MSFT\\meta": {
+    "folders": [
+      "checkpoints",
+      "graphs"
+    ],
+    "files": [
+      "best_model.zip",
+      "forward_test_metrics.json",
+      "forward_test_trades.json",
+      "meta_ai_final.zip",
+      "vecnormalize.pkl"
+    ]
+  },
+  "data\\historical\\stocks\\MSFT\\meta\\checkpoints": {
+    "folders": [],
+    "files": [
+      "MSFT_meta_10000000_steps.zip",
+      "MSFT_meta_1000000_steps.zip",
+      "MSFT_meta_1500000_steps.zip",
+      "MSFT_meta_2000000_steps.zip",
+      "MSFT_meta_2500000_steps.zip",
+      "MSFT_meta_3000000_steps.zip",
+      "MSFT_meta_3500000_steps.zip",
+      "MSFT_meta_4000000_steps.zip",
+      "MSFT_meta_4500000_steps.zip",
+      "MSFT_meta_5000000_steps.zip",
+      "MSFT_meta_500000_steps.zip",
+      "MSFT_meta_5500000_steps.zip",
+      "MSFT_meta_6000000_steps.zip",
+      "MSFT_meta_6500000_steps.zip",
+      "MSFT_meta_7000000_steps.zip",
+      "MSFT_meta_7500000_steps.zip",
+      "MSFT_meta_8000000_steps.zip",
+      "MSFT_meta_8500000_steps.zip",
+      "MSFT_meta_9000000_steps.zip",
+      "MSFT_meta_9500000_steps.zip"
+    ]
+  },
+  "data\\historical\\stocks\\MSFT\\meta\\graphs": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.png",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\historical\\stocks\\NKE": {
+    "folders": [
+      "daily",
+      "hourly",
+      "meta"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\NKE\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\NKE\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\NKE\\meta": {
+    "folders": [
+      "checkpoints"
+    ],
+    "files": [
+      "best_model.zip",
+      "forward_test_metrics.json",
+      "meta_ai_final.zip"
+    ]
+  },
+  "data\\historical\\stocks\\NKE\\meta\\checkpoints": {
+    "folders": [],
+    "files": [
+      "NKE_meta_1049895_steps.zip",
+      "NKE_meta_1099890_steps.zip",
+      "NKE_meta_1149885_steps.zip",
+      "NKE_meta_1199880_steps.zip",
+      "NKE_meta_1249875_steps.zip",
+      "NKE_meta_1299870_steps.zip",
+      "NKE_meta_1349865_steps.zip",
+      "NKE_meta_1399860_steps.zip",
+      "NKE_meta_1449855_steps.zip",
+      "NKE_meta_1499850_steps.zip",
+      "NKE_meta_149985_steps.zip",
+      "NKE_meta_1549845_steps.zip",
+      "NKE_meta_1599840_steps.zip",
+      "NKE_meta_1649835_steps.zip",
+      "NKE_meta_1699830_steps.zip",
+      "NKE_meta_1749825_steps.zip",
+      "NKE_meta_1799820_steps.zip",
+      "NKE_meta_1849815_steps.zip",
+      "NKE_meta_1899810_steps.zip",
+      "NKE_meta_1949805_steps.zip",
+      "NKE_meta_1999800_steps.zip",
+      "NKE_meta_199980_steps.zip",
+      "NKE_meta_249975_steps.zip",
+      "NKE_meta_299970_steps.zip",
+      "NKE_meta_349965_steps.zip",
+      "NKE_meta_399960_steps.zip",
+      "NKE_meta_449955_steps.zip",
+      "NKE_meta_499950_steps.zip",
+      "NKE_meta_49995_steps.zip",
+      "NKE_meta_549945_steps.zip",
+      "NKE_meta_599940_steps.zip",
+      "NKE_meta_649935_steps.zip",
+      "NKE_meta_699930_steps.zip",
+      "NKE_meta_749925_steps.zip",
+      "NKE_meta_799920_steps.zip",
+      "NKE_meta_849915_steps.zip",
+      "NKE_meta_899910_steps.zip",
+      "NKE_meta_949905_steps.zip",
+      "NKE_meta_999900_steps.zip",
+      "NKE_meta_99990_steps.zip"
+    ]
+  },
+  "data\\historical\\stocks\\NVDA": {
+    "folders": [
+      "daily",
+      "hourly",
+      "meta"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\NVDA\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_prediction.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "paper_trade_results.json",
+      "performance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\NVDA\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_prediction.json",
+      "hourly_settings.json",
+      "paper_trade_results.json",
+      "performance_hourly.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\NVDA\\meta": {
+    "folders": [
+      "checkpoints",
+      "graphs"
+    ],
+    "files": [
+      "best_model.zip",
+      "forward_test_metrics.json",
+      "forward_test_trades.json",
+      "meta_ai_final.zip",
+      "vecnormalize.pkl"
+    ]
+  },
+  "data\\historical\\stocks\\NVDA\\meta\\checkpoints": {
+    "folders": [],
+    "files": [
+      "NVDA_meta_10000000_steps.zip",
+      "NVDA_meta_1000000_steps.zip",
+      "NVDA_meta_1500000_steps.zip",
+      "NVDA_meta_2000000_steps.zip",
+      "NVDA_meta_2500000_steps.zip",
+      "NVDA_meta_3000000_steps.zip",
+      "NVDA_meta_3500000_steps.zip",
+      "NVDA_meta_4000000_steps.zip",
+      "NVDA_meta_4500000_steps.zip",
+      "NVDA_meta_5000000_steps.zip",
+      "NVDA_meta_500000_steps.zip",
+      "NVDA_meta_5500000_steps.zip",
+      "NVDA_meta_6000000_steps.zip",
+      "NVDA_meta_6500000_steps.zip",
+      "NVDA_meta_7000000_steps.zip",
+      "NVDA_meta_7500000_steps.zip",
+      "NVDA_meta_8000000_steps.zip",
+      "NVDA_meta_8500000_steps.zip",
+      "NVDA_meta_9000000_steps.zip",
+      "NVDA_meta_9500000_steps.zip"
+    ]
+  },
+  "data\\historical\\stocks\\NVDA\\meta\\graphs": {
+    "folders": [],
+    "files": [
+      "drawdown.png",
+      "equity_curve.png",
+      "trade_distribution.png"
+    ]
+  },
+  "data\\historical\\stocks\\PG": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\PG\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\PG\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\SHW": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\SHW\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\SHW\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\TRV": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\TRV\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\TRV\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\TSLA": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\TSLA\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\TSLA\\hourly": {
+    "folders": [],
+    "files": [
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\UNH": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\UNH\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\UNH\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\V": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\V\\daily": {
+    "folders": [],
+    "files": [
+      "daily_feature_names.json",
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\V\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_feature_names.json",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\VZ": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\VZ\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\VZ\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\WBA": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\WBA\\daily": {
+    "folders": [],
+    "files": [
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\WBA\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\WMT": {
+    "folders": [
+      "daily",
+      "hourly"
+    ],
+    "files": []
+  },
+  "data\\historical\\stocks\\WMT\\daily": {
+    "folders": [],
+    "files": [
+      "daily_feature_names.json",
+      "daily_model.joblib",
+      "daily_params.json",
+      "daily_settings.json",
+      "feature_importance_daily.png",
+      "training_config.json"
+    ]
+  },
+  "data\\historical\\stocks\\WMT\\hourly": {
+    "folders": [],
+    "files": [
+      "feature_importance_hourly.png",
+      "hourly_feature_names.json",
+      "hourly_model.joblib",
+      "hourly_params.json",
+      "hourly_settings.json",
+      "training_config.json"
+    ]
+  },
+  "data\\hourly": {
+    "folders": [],
+    "files": [
+      "AAPL.csv",
+      "ADBE.csv",
+      "AMD.csv",
+      "AMGN.csv",
+      "AMZN.csv",
+      "AVGO.csv",
+      "AXP.csv",
+      "BA.csv",
+      "BAC.csv",
+      "CAT.csv",
+      "CRM.csv",
+      "CSCO.csv",
+      "CVX.csv",
+      "DIA.csv",
+      "DIS.csv",
+      "DJI.csv",
+      "DOW.csv",
+      "GOOGL.csv",
+      "GS.csv",
+      "HD.csv",
+      "HON.csv",
+      "IBM.csv",
+      "INTC.csv",
+      "JNJ.csv",
+      "JPM.csv",
+      "KO.csv",
+      "MCD.csv",
+      "META.csv",
+      "MMM.csv",
+      "MRK.csv",
+      "MSFT.csv",
+      "MTC.csv",
+      "NFLX.csv",
+      "NKE.csv",
+      "NVDA.csv",
+      "ORCL.csv",
+      "PG.csv",
+      "QCOM.csv",
+      "QQQ.csv",
+      "SAP.csv",
+      "SHW.csv",
+      "SPY.csv",
+      "TRV.csv",
+      "TSLA.csv",
+      "UNH.csv",
+      "V.csv",
+      "VZ.csv",
+      "WBA.csv",
+      "WMT.csv",
+      "XOM.csv"
+    ]
+  },
+  "data\\logs": {
+    "folders": [
+      "meta_ai"
+    ],
+    "files": [
+      "bot_detailed.log",
+      "bot_runner.log",
+      "dashboard.log",
+      "meta_ai_training_data.csv"
+    ]
+  },
+  "data\\logs\\meta_ai": {
+    "folders": [
+      "AAPL",
+      "AMZN",
+      "JPM",
+      "MSFT",
+      "NVDA"
+    ],
+    "files": []
+  },
+  "data\\logs\\meta_ai\\AAPL": {
+    "folders": [
+      "AAPL_meta_ai_1",
+      "AAPL_meta_ai_10",
+      "AAPL_meta_ai_11",
+      "AAPL_meta_ai_12",
+      "AAPL_meta_ai_13",
+      "AAPL_meta_ai_14",
+      "AAPL_meta_ai_15",
+      "AAPL_meta_ai_16",
+      "AAPL_meta_ai_17",
+      "AAPL_meta_ai_18",
+      "AAPL_meta_ai_19",
+      "AAPL_meta_ai_2",
+      "AAPL_meta_ai_20",
+      "AAPL_meta_ai_21",
+      "AAPL_meta_ai_22",
+      "AAPL_meta_ai_23",
+      "AAPL_meta_ai_24",
+      "AAPL_meta_ai_25",
+      "AAPL_meta_ai_26",
+      "AAPL_meta_ai_27",
+      "AAPL_meta_ai_28",
+      "AAPL_meta_ai_29",
+      "AAPL_meta_ai_3",
+      "AAPL_meta_ai_30",
+      "AAPL_meta_ai_31",
+      "AAPL_meta_ai_32",
+      "AAPL_meta_ai_33",
+      "AAPL_meta_ai_34",
+      "AAPL_meta_ai_35",
+      "AAPL_meta_ai_36",
+      "AAPL_meta_ai_37",
+      "AAPL_meta_ai_38",
+      "AAPL_meta_ai_39",
+      "AAPL_meta_ai_4",
+      "AAPL_meta_ai_40",
+      "AAPL_meta_ai_41",
+      "AAPL_meta_ai_5",
+      "AAPL_meta_ai_6",
+      "AAPL_meta_ai_7",
+      "AAPL_meta_ai_8",
+      "AAPL_meta_ai_9",
+      "AAPL_meta_ai_v3_1",
+      "AAPL_meta_ai_v3_10",
+      "AAPL_meta_ai_v3_11",
+      "AAPL_meta_ai_v3_12",
+      "AAPL_meta_ai_v3_13",
+      "AAPL_meta_ai_v3_14",
+      "AAPL_meta_ai_v3_15",
+      "AAPL_meta_ai_v3_16",
+      "AAPL_meta_ai_v3_17",
+      "AAPL_meta_ai_v3_18",
+      "AAPL_meta_ai_v3_19",
+      "AAPL_meta_ai_v3_2",
+      "AAPL_meta_ai_v3_20",
+      "AAPL_meta_ai_v3_21",
+      "AAPL_meta_ai_v3_3",
+      "AAPL_meta_ai_v3_4",
+      "AAPL_meta_ai_v3_5",
+      "AAPL_meta_ai_v3_6",
+      "AAPL_meta_ai_v3_7",
+      "AAPL_meta_ai_v3_8",
+      "AAPL_meta_ai_v3_9",
+      "AAPL_meta_ai_v4_1",
+      "AAPL_meta_ai_v4_2",
+      "eval",
+      "train"
+    ],
+    "files": [
+      "evaluations.npz"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_1": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770137262.TOMSLAPTOP.12228.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_10": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770209986.TOMSLAPTOP.35120.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_11": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770213135.TOMSLAPTOP.32612.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_12": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770225875.TOMSLAPTOP.33348.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_13": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770227494.TOMSLAPTOP.36948.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_14": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770227780.TOMSLAPTOP.38416.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_15": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770228313.TOMSLAPTOP.35444.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_16": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770228604.TOMSLAPTOP.16400.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_17": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770229205.TOMSLAPTOP.36760.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_18": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770229495.TOMSLAPTOP.38500.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_19": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770230333.TOMSLAPTOP.23060.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_2": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770147010.TOMSLAPTOP.5892.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_20": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770230561.TOMSLAPTOP.22440.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_21": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770244188.TOMSLAPTOP.39432.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_22": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770245028.TOMSLAPTOP.25764.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_23": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770305489.TOMSLAPTOP.30528.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_24": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770310079.TOMSLAPTOP.29096.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_25": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770311130.TOMSLAPTOP.23376.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_26": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770395791.TOMSLAPTOP.23012.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_27": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770396265.TOMSLAPTOP.23012.1"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_28": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770460038.TOMSLAPTOP.30728.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_29": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770463055.TOMSLAPTOP.31372.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_3": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770149753.TOMSLAPTOP.2856.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_30": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770466131.TOMSLAPTOP.31372.1"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_31": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770466187.TOMSLAPTOP.22964.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_32": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770466391.TOMSLAPTOP.13964.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_33": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770466574.TOMSLAPTOP.35228.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_34": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770474028.TOMSLAPTOP.1784.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_35": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770484622.TOMSLAPTOP.28448.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_36": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770504324.TOMSLAPTOP.21360.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_37": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770546150.TOMSLAPTOP.26340.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_38": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770550132.TOMSLAPTOP.14416.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_39": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770551301.TOMSLAPTOP.39784.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_4": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770155343.TOMSLAPTOP.12752.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_40": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770555984.TOMSLAPTOP.23888.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_41": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770567318.TOMSLAPTOP.30096.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_5": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770155666.TOMSLAPTOP.34960.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_6": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770155955.TOMSLAPTOP.8832.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_7": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770156333.TOMSLAPTOP.31776.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_8": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770157984.TOMSLAPTOP.37420.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_9": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770158085.TOMSLAPTOP.7968.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_1": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769791457.TOMSLAPTOP.5432.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_10": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769861042.TOMSLAPTOP.7620.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_11": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769865429.TOMSLAPTOP.17528.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_12": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769938801.TOMSLAPTOP.14228.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_13": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769941608.TOMSLAPTOP.33500.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_14": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769941883.TOMSLAPTOP.33500.1"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_15": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769941939.TOMSLAPTOP.36984.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_16": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769942136.TOMSLAPTOP.36984.1"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_17": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769942166.TOMSLAPTOP.21160.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_18": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769976625.TOMSLAPTOP.12136.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_19": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769976681.TOMSLAPTOP.13024.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_2": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769801658.TOMSLAPTOP.23648.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_20": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769976968.TOMSLAPTOP.37976.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_21": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770069404.TOMSLAPTOP.1484.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_3": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769805300.TOMSLAPTOP.9164.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_4": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769848902.TOMSLAPTOP.36240.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_5": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769848969.TOMSLAPTOP.36240.1"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_6": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769848998.TOMSLAPTOP.4056.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_7": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769851630.TOMSLAPTOP.15528.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_8": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769853987.TOMSLAPTOP.10552.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v3_9": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1769857626.TOMSLAPTOP.32924.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v4_1": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770136469.TOMSLAPTOP.30768.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\AAPL_meta_ai_v4_2": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770137231.TOMSLAPTOP.30768.1"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\eval": {
+    "folders": [],
+    "files": [
+      "0.monitor.csv",
+      "monitor.csv"
+    ]
+  },
+  "data\\logs\\meta_ai\\AAPL\\train": {
+    "folders": [],
+    "files": [
+      "0.monitor.csv",
+      "1.monitor.csv",
+      "10.monitor.csv",
+      "11.monitor.csv",
+      "12.monitor.csv",
+      "13.monitor.csv",
+      "14.monitor.csv",
+      "15.monitor.csv",
+      "2.monitor.csv",
+      "3.monitor.csv",
+      "4.monitor.csv",
+      "5.monitor.csv",
+      "6.monitor.csv",
+      "7.monitor.csv",
+      "8.monitor.csv",
+      "9.monitor.csv"
+    ]
+  },
+  "data\\logs\\meta_ai\\AMZN": {
+    "folders": [
+      "AMZN_meta_ai_1",
+      "eval",
+      "train"
+    ],
+    "files": [
+      "evaluations.npz"
+    ]
+  },
+  "data\\logs\\meta_ai\\AMZN\\AMZN_meta_ai_1": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770581861.TOMSLAPTOP.48440.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\AMZN\\eval": {
+    "folders": [],
+    "files": [
+      "0.monitor.csv"
+    ]
+  },
+  "data\\logs\\meta_ai\\AMZN\\train": {
+    "folders": [],
+    "files": [
+      "0.monitor.csv",
+      "1.monitor.csv",
+      "10.monitor.csv",
+      "11.monitor.csv",
+      "12.monitor.csv",
+      "13.monitor.csv",
+      "14.monitor.csv",
+      "15.monitor.csv",
+      "2.monitor.csv",
+      "3.monitor.csv",
+      "4.monitor.csv",
+      "5.monitor.csv",
+      "6.monitor.csv",
+      "7.monitor.csv",
+      "8.monitor.csv",
+      "9.monitor.csv"
+    ]
+  },
+  "data\\logs\\meta_ai\\JPM": {
+    "folders": [
+      "eval",
+      "JPM_meta_ai_1",
+      "JPM_meta_ai_2",
+      "train"
+    ],
+    "files": [
+      "evaluations.npz"
+    ]
+  },
+  "data\\logs\\meta_ai\\JPM\\eval": {
+    "folders": [],
+    "files": [
+      "0.monitor.csv"
+    ]
+  },
+  "data\\logs\\meta_ai\\JPM\\JPM_meta_ai_1": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770583788.TOMSLAPTOP.48440.1"
+    ]
+  },
+  "data\\logs\\meta_ai\\JPM\\JPM_meta_ai_2": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770584205.TOMSLAPTOP.5076.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\JPM\\train": {
+    "folders": [],
+    "files": [
+      "0.monitor.csv",
+      "1.monitor.csv",
+      "10.monitor.csv",
+      "11.monitor.csv",
+      "12.monitor.csv",
+      "13.monitor.csv",
+      "14.monitor.csv",
+      "15.monitor.csv",
+      "2.monitor.csv",
+      "3.monitor.csv",
+      "4.monitor.csv",
+      "5.monitor.csv",
+      "6.monitor.csv",
+      "7.monitor.csv",
+      "8.monitor.csv",
+      "9.monitor.csv"
+    ]
+  },
+  "data\\logs\\meta_ai\\MSFT": {
+    "folders": [
+      "eval",
+      "MSFT_meta_ai_1",
+      "MSFT_meta_ai_2",
+      "train"
+    ],
+    "files": [
+      "evaluations.npz"
+    ]
+  },
+  "data\\logs\\meta_ai\\MSFT\\eval": {
+    "folders": [],
+    "files": [
+      "0.monitor.csv"
+    ]
+  },
+  "data\\logs\\meta_ai\\MSFT\\MSFT_meta_ai_1": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770571160.TOMSLAPTOP.30096.1"
+    ]
+  },
+  "data\\logs\\meta_ai\\MSFT\\MSFT_meta_ai_2": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770573499.TOMSLAPTOP.46628.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\MSFT\\train": {
+    "folders": [],
+    "files": [
+      "0.monitor.csv",
+      "1.monitor.csv",
+      "10.monitor.csv",
+      "11.monitor.csv",
+      "12.monitor.csv",
+      "13.monitor.csv",
+      "14.monitor.csv",
+      "15.monitor.csv",
+      "2.monitor.csv",
+      "3.monitor.csv",
+      "4.monitor.csv",
+      "5.monitor.csv",
+      "6.monitor.csv",
+      "7.monitor.csv",
+      "8.monitor.csv",
+      "9.monitor.csv"
+    ]
+  },
+  "data\\logs\\meta_ai\\NVDA": {
+    "folders": [
+      "eval",
+      "NVDA_meta_ai_1",
+      "NVDA_meta_ai_2",
+      "train"
+    ],
+    "files": [
+      "evaluations.npz"
+    ]
+  },
+  "data\\logs\\meta_ai\\NVDA\\eval": {
+    "folders": [],
+    "files": [
+      "0.monitor.csv"
+    ]
+  },
+  "data\\logs\\meta_ai\\NVDA\\NVDA_meta_ai_1": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770575431.TOMSLAPTOP.46628.1"
+    ]
+  },
+  "data\\logs\\meta_ai\\NVDA\\NVDA_meta_ai_2": {
+    "folders": [],
+    "files": [
+      "events.out.tfevents.1770579160.TOMSLAPTOP.46900.0"
+    ]
+  },
+  "data\\logs\\meta_ai\\NVDA\\train": {
+    "folders": [],
+    "files": [
+      "0.monitor.csv",
+      "1.monitor.csv",
+      "10.monitor.csv",
+      "11.monitor.csv",
+      "12.monitor.csv",
+      "13.monitor.csv",
+      "14.monitor.csv",
+      "15.monitor.csv",
+      "2.monitor.csv",
+      "3.monitor.csv",
+      "4.monitor.csv",
+      "5.monitor.csv",
+      "6.monitor.csv",
+      "7.monitor.csv",
+      "8.monitor.csv",
+      "9.monitor.csv"
+    ]
+  },
+  "data\\trades": {
+    "folders": [],
+    "files": [
+      "trading_bot.db"
+    ]
+  },
+  "models": {
+    "folders": [
+      "daily",
+      "hourly",
+      "meta"
+    ],
+    "files": [
+      "__init__.py"
+    ]
+  },
+  "models\\daily": {
+    "folders": [],
+    "files": [
+      "predictor.py",
+      "trainer.py",
+      "__init__.py"
+    ]
+  },
+  "models\\hourly": {
+    "folders": [],
+    "files": [
+      "predictor.py",
+      "trainer.py",
+      "__init__.py"
+    ]
+  },
+  "models\\meta": {
+    "folders": [],
+    "files": [
+      "meta_trainer.py",
+      "stock_trading_env.py",
+      "trading_env.py",
+      "__init__.py"
+    ]
+  },
+  "old_backups": {
+    "folders": [],
+    "files": [
+      "app_backup.py",
+      "backtester_backup.py",
+      "bot_runner_backup.py",
+      "main_backup.py",
+      "prev_v3.3_parametres.txt",
+      "threshold_optimizer.py",
+      "threshold_optimizer_hourly.py",
+      "trading_env.py",
+      "trainer.py"
+    ]
+  },
+  "testing": {
+    "folders": [],
+    "files": [
+      "backtester.py",
+      "optimizer_daily.py",
+      "optimizer_hourly.py",
+      "paper_trader.py",
+      "paper_trader_hourly.py",
+      "portfolio_simulator.py",
+      "run_v33_backtest.py",
+      "strategies.py",
+      "strategies_hourly.py",
+      "threshold_optimizer.py",
+      "threshold_optimizer_hourly.py",
+      "v33_parameter_optimizer.py",
+      "__init__.py"
+    ]
+  },
+  "utils": {
+    "folders": [],
+    "files": [
+      "auth.py",
+      "config.py",
+      "data_fetcher.py",
+      "data_fetcher_hourly.py",
+      "meta_logger.py",
+      "preflight_check.py",
+      "__init__.py"
+    ]
+  }
+}
